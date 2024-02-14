@@ -37,20 +37,20 @@
         style="background-image: url(./images/background.png); background-repeat: no-repeat;">
 
         <!-- home screen -->
-        <section class="home min-h-screen flex justify-center items-center  ">
+        <section id="home-screen" class=" min-h-screen flex justify-center items-center  ">
             <div class="flex flex-col items-center gap-10">
                 <h1 class="text-8xl font-anton font-normal uppercase">Alpha clash Pro</h1>
 
                 <p>Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
 
-                <button onclick="play()" class="btn bg-white font-popins">Play Now</button>
+                <button onclick="play() " class="btn bg-white font-popins">Play Now</button>
             </div>
 
         </section>
 
         <!-- play graund -->
 
-        <section class="play-ground hidden">
+        <section id="play-ground" class=" hidden">
             <div class=" flex flex-col items-center gap-20 pt-20">
                 <!-- screen -->
                 <div
@@ -153,7 +153,8 @@
 
 
 
-
+<script src="./alpha-clash.js"></script>
+<script src="./utility.js"></script>
 </body>
 
 </html>
