@@ -21,10 +21,18 @@ function play() {
     hideElementByid('home-screen')
     showElement('play-ground')
     continueGame()
+
 }
 
 function continueGame() {
     
     const alphabet = getElementAlphabet();
    console.log('random alphabet',alphabet)
+
+//    Set  randomly generated alphabet to the screen show it
+
+const currentAlphabet = document.getElementById('display-text');
+currentAlphabet.innerText = alphabet ;
+
+setBackgraundColor(alphabet)
 }

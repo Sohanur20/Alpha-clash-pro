@@ -9,6 +9,12 @@ function showElement(showId) {
     element.classList.remove('hidden')
 }
 
+function setBackgraundColor(elementId) {
+    const element = document.getElementById(elementId);
+    element.classList.add('bg-amber-400')
+
+}
+
 function getElementAlphabet() {
     const aplphabetString = 'abcdefghijklmnopqrstwrxyz'
     const alphabets = aplphabetString.split('')
@@ -20,5 +26,8 @@ function getElementAlphabet() {
 const alphabet = alphabets[index];
 console.log(index,alphabet)
 return alphabet
+
+
+
 
 }
